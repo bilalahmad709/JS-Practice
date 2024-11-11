@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change attribute</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #image-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #image-div img{
+            height: 200px;
+            width: 180px;
+        }
+        #buttons-div{
+            display: flex;
+        
+        }
+    </style>
+</head>
+<body>
+ <h3>We can also change the attribute of an element using javascript</h3>
+ <p>Below we will change the source of the image using js</p>
+
+ <div id="image-div">
+  <img src="/change-attribute/images/bulb0n.webp" alt="" id="bulb">
+
+  <div id="buttons-div">
+    <button  id="bulbon" onclick="document.getElementById('bulb').src='/change-attribute/images/bulb0n.webp'">
+        Switch On The Bulb
+    </button>
+
+    <button  id="bulboff" onclick="document.getElementById('bulb').src='/change-attribute/images/bulboff.jpeg'">
+        Switch Off the Bulb
+    </button>
+   
+  </div>
+ </div>
+    
+</body>
+</html>

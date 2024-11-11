@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current date and time</title>
+</head>
+<body>
+    <p id="date-time">
+
+    </p>
+    <button type="button" onclick="document.getElementById('date-time').innerHTML= Date()">
+        Click me for current date and Time
+    </button>
+    <br>
+    <br>
+    <h3>InnerText</h3>
+    <h5>
+        By using innertext it will pickup all the text and tags as once, it will consider whole as a text. as shown below.
+    </h5>
+    <p id="innerText"> Here is a simple example </p>
+
+    <h3>innerHTML:</h3>
+    <h5>
+        this will change the complete text and tag as well if want. as shown below, its changing it from p tag to h2 tag 
+    </h5>
+    <p id="innerhTml"> this example is about innerHTML</p>
+
+
+    <script>
+        document.getElementById('innerText').innerText="<a href=''>We are welcoming you</a>";
+        document.getElementById('innerhTml').innerHTML="<h2>Inner Html changed</h2>"
+    </script>
+</body>
+</html>
