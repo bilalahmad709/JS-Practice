@@ -32,19 +32,20 @@
  <p>Below we will change the source of the image using js</p>
 
  <div id="image-div">
-  <img src="/change-attribute/images/bulb0n.webp" alt="" id="bulb">
+    <!-- img has given through js file -->
+  <img src="" alt="" id="bulb">
 
   <div id="buttons-div">
-    <button  id="bulbon" onclick="document.getElementById('bulb').src='/change-attribute/images/bulb0n.webp'">
+    <button  id="bulbon" onclick="bulbOnn()">
         Switch On The Bulb
     </button>
 
-    <button  id="bulboff" onclick="document.getElementById('bulb').src='/change-attribute/images/bulboff.jpeg'">
+    <button  id="bulboff" onclick="bulbOff()">
         Switch Off the Bulb
     </button>
    
   </div>
  </div>
-    
+    <script src="change-attribute.js"></script>
 </body>
 </html>
