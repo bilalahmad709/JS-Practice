@@ -1,51 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Change attribute</title>
-    <style>
-        body{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        #image-div{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        #image-div img{
-            height: 200px;
-            width: 180px;
-        }
-        #buttons-div{
-            display: flex;
-        
-        }
-    </style>
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- customm css -->
+    <link rel="stylesheet" href="/change-attribute/change-attribute.css">
+
 </head>
-<body>
- <h3>We can also change the attribute of an element using javascript</h3>
- <p>Below we will change the source of the image using js</p>
 
- <div id="image-div">
-    <!-- img has given through js file -->
-  <img src="" alt="" id="bulb">
+<body class="d-flex justify-content-center align-items-center flex-column text-center">
+    <h3>We can change the attribute of an element using javascript</h3>
+    <p>Below we will change the source of the image using js</p>
 
-  <div id="buttons-div">
-    <button  id="bulbon" onclick="bulbOnn()">
-        Switch On The Bulb
-    </button>
+    <div class="d-flex flex-column justify-content-center align-items-center border border-4 p-3 mx-5">
+        <h3 class="fw-blod">
+            <u>BULB EXAMPLE</u>
+        </h3>
+        <div class="my-2">
+            <!-- img has given through js file -->
+            <img src="" alt="" id="bulb">
+        </div>
 
-    <button  id="bulboff" onclick="bulbOff()">
-        Switch Off the Bulb
-    </button>
-   
-  </div>
- </div>
+        <div id="d-flex justify-content-between ">
+            <button id="bulbon" onclick="bulbOnn()" class="btn btn-primary">
+                Switch On The Bulb
+            </button>
+
+            <button id="bulboff" onclick="bulbOff()" class="btn btn-primary">
+                Switch Off the Bulb
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Changing of different images -->
+
+    <!-- NOTE:The sources of all images have set through js file -->
+
+    <div class="mt-4 d-flex flex-column justify-content-center align-items-center">
+
+        <!-- main image -->
+         <div class="d-flex" id="main_img">
+            <!-- <img src="" alt="" id=""> -->
+         </div>
+
+         <!-- sub-images -->
+<div class="d-flex">
+     <!-- subimg 1 -->
+     <div class="d-flex mx-2 mt-3">
+        <img src="" alt="" class="subimg rounded-4" id="sub-img1" onclick="abdulhaq()">
+      </div>
+
+      <!-- subimg 2 -->
+      <div class="d-flex mx-2 mt-3" >
+        <img src="" alt="" class="subimg rounded-4" id="sub-img2" onclick="zahid()">
+      </div>
+
+      <!-- subimg 3 -->
+      <div class="d-flex mx-2 mt-3" >
+        <img src="" alt="" class="subimg rounded-4" id="sub-img3" onclick="bilal()">
+      </div>
+</div>
+        
+    </div>
+
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
     <script src="change-attribute.js"></script>
 </body>
+
 </html>

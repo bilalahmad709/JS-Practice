@@ -1,0 +1,20 @@
+#bulb{
+    width: 200px;
+    height: 200px;
+}
+
+.mainImage{
+    min-width:250px;
+    max-width: 400px;
+    min-height: 250px;
+    max-height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.subimg{
+    min-width:60px;
+    max-width: 80px;
+    min-height: 60px;
+    max-height: 80px;
+}
