@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Marks Finder </title>
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/marksfinder/marksfinder.css">
+</head>
+
+<body>
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center text-center">
+        <h3 class="my-3 fw-bold">Find your marks Percentage and Grade</h3>
+        <form action="" class="d-flex flex-column ">
+            <!-- name -->
+            <div class="d-flex my-1">
+                <label for="" class="my-auto mx-2"> Name</label>
+                <input type="text" id="name" placeholder="enter your name" class="form-control">
+            </div>
+
+            <!-- F/name -->
+            <div class="d-flex my-1">
+                <label for="" class="my-auto mx-2">Father Name</label>
+                <input type="text"  id="f_name" placeholder="enter your f/name" class="form-control">
+            </div>
+
+            <!-- roll no -->
+            <div class="d-flex my-1">
+                <label for="" class="my-auto mx-2">Roll No</label>
+                <input type="text" name="" id="roll_no" placeholder="enter your roll no" class="form-control">
+            </div>
+
+            <!-- total marks -->
+            <div class="d-flex my-1">
+                <label for="" class="my-auto mx-2">Total Marks</label>
+                <input type="text" name="" id="totalmarks" placeholder="enter your total marks" class="form-control" onchange="result()">
+            </div>
+
+            <!-- Obtain marks -->
+            <div class="d-flex my-3">
+                <label for="" class="my-auto mx-2">Obtain Marks</label>
+                <input type="text" id="obtain_marks" placeholder="enter your obtain marks" class="form-control" onchange="result()">
+            </div>
+
+        </form>
+
+        <!-- Result -->
+        <div class="d-flex justify-content-center">
+
+            <!-- Total marks -->
+            <div class="d-flex mx-3">
+                <p>Total marks is :</p> 
+                <h4 id="totalResult"></h4>
+                
+                
+            </div>
+
+            <!-- Obtain marks -->
+            <div class="d-flex mx-3">
+                <p>Obtain marks is :</p> 
+                <h4 id="ObtainResult"></h4>
+                
+                
+            </div>
+
+            <!-- Percentage -->
+            <div class="d-flex mx-3">
+                <p>Your percentage  is :</p>
+                <h5 id="percentage"></h5>
+                
+                
+            </div>
+
+            <!-- Grade -->
+            <div class="d-flex mx-3">
+                <p>Your Grade is :</p>
+                <h5 id="grade"></h5>
+                
+                
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- customn js file link -->
+    <script src="/marksfinder.js"></script>
+
+    <!-- js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
