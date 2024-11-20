@@ -61,3 +61,22 @@ sum(10,20);
 let division = div(20,2);
 document.write("<br> The division of two values is :" + division);
 
+//simple arrow function
+bilal=()=>{
+document.write(" <br>Hi there, I am learning JS");
+}
+
+bilal();
+bilal();
+bilal();
+
+//simple arrow function 
+
+hilal=()=>{
+    document.write("<br><br>I am Hilal Azam Banori");
+}
+
+hilal();
+hilal();
+hilal();
+
