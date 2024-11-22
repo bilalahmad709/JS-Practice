@@ -38,6 +38,36 @@ divs.innerText = "hello";
 // targetting single div
 divs[0].innerText = "first div's text has been changed";
 
+divs[2].innerHTML = "<h3>div3 p tag  has changed to h3</h3>";
+
+//Attributes
+
+//set attribute
+let para= document.querySelector(".setattr");
+para.setAttribute("class" , "setattr2");
+
+// Create element 
+
+// create element is used to add some element 
+// there are two steps for createElement
+// 1st one is to create element 
+// second one is to add element
+
+let parentdivv =document.getElementById("appendDiv");
+let button = document.createElement("button");
+button.innerText = "click me";
+
+parentdivv.append(button);
+
+// by using only append the button will appear at the end of the div by default
+
+//creating button before li 2
+let secondli= document.getElementById("secondli")
+let secondButton = document.createElement("button");
+secondButton.innerText = "umar Button";
+secondButton.style.color= "white";
+secondButton.style.backgroundColor = "darkblue";
+secondli.before(secondButton);
 
 
 
