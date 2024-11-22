@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: aqua;
+            margin: 3px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- for innerHtml -->
+    <div id="parentDiv">
+        <div id="firstChid">First child</div>
+        <div id="secondChild"> secon child</div>
+        <div id="thirdChild">
+            <h3>third child</h3>
+            <ul>
+                <li>apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- for inner text -->
+    <div id="textParent">
+        <div id="textfirstChid">First child</div>
+        <div id="textsecondChild"> secon child</div>
+        <div id="textthirdChild">
+            <h3>third child</h3>
+            <ul>
+                <li>apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- for tagName -->
+    
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <ul>
+       
+        <li>banana</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+
+    <!-- textContent -->
+     <p id="textcontent" style="visibility: hidden;">
+        this para is used for textContent
+     </p>
+
+     <h4>
+        We are Welcoming you
+     </h4>
+
+     <h5>
+        This is the text of h5
+     </h5>
+
+     <!-- quiz no 2 -->
+      <!-- Question : create 3 divs with common classname - "box". access them & add some unique text to each of them -->
+
+      <div class="box">
+        <p>first div</p>
+      </div>
+      <div class="box">
+        <p>second div</p>
+      </div>
+      <div class="box">
+        <p>third div</p>
+      </div>
+    
+    <script src="/Dom/dom.js"></script>
+</body>
+</html>

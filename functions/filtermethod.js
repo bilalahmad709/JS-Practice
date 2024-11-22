@@ -4,7 +4,7 @@ document.write("<h3>Filter method</h3>")
 let studentsMarks= [55,67,87,87,98,94,33];
 
 const toppers= studentsMarks.filter((val)=>{
-    return val > 80 ;
+    return val > 80 ;   
 });
 
 document.write("<br> The marks list is : " + studentsMarks + "<br>");
