@@ -61,6 +61,10 @@ parentdivv.append(button);
 
 // by using only append the button will appear at the end of the div by default
 
+
+//for other we can use
+//.before  .after  .prepend
+
 //creating button before li 2
 let secondli= document.getElementById("secondli")
 let secondButton = document.createElement("button");
@@ -68,6 +72,13 @@ secondButton.innerText = "umar Button";
 secondButton.style.color= "white";
 secondButton.style.backgroundColor = "darkblue";
 secondli.before(secondButton);
+
+// creating element at the start
+
+let h3= document.createElement("h3");
+h3.innerText = "Hi I am created through createElement";
+
+parentdivv.prepend(h3);
 
 
 
