@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: darkolivegreen;
+
+}
+
+body{   
+    text-align: center;
+}
+#main-container{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#game{
+    height: 60vmin;
+    width: 60vmin;
+    gap: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    height: 18vmin;
+    width: 18vmin;
+}
+#rest_button{
+    background-color: aliceblue;
+    font-size: 20px;
+    margin-top: 20px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
