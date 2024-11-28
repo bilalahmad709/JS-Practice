@@ -44,9 +44,9 @@ soldCar.sold();
 
 //third example of the class
 class calculation{
-     constructor(){
-        this.a = 10;
-        this.b = 20;
+     constructor(num1, num2){
+        this.a = num1;
+        this.b = num2;
      }
      add(){
         let c = this.a + this.b;
@@ -57,11 +57,11 @@ class calculation{
         return c;
      }
 }
-const addition = new calculation();
-document.write("<br><br> The addition of 'A' and 'B' is : " + addition.add());
+const addition = new calculation( 20, 30);
+document.write(`<br><br> The addition of ${addition.a} and ${addition.b} is :`  + addition.add());
 
-const subtraction = new calculation();
-document.write("<br><br> The addition of 'A' and 'B' is : " + subtraction.sub());
+const subtraction = new calculation(10, 20);
+document.write(`<br><br> The subtraction of ${subtraction.a} and ${subtraction.b} is : ` + subtraction.sub());
 
 //fourth example of class and object
 class Student {
@@ -124,7 +124,7 @@ b.hello();
 
 //  NOTE : if child and parent have same methods, child's method will be used. and this called " Method Overriding ";
 
-// example of function ovverriding
+//inheritance 1st example 
 class Animal {
     makeSound() {
         console.log("Some generic animal sound");
@@ -139,3 +139,5 @@ class Dog extends Animal {
 
 let dog = new Dog();
 dog.makeSound(); // Output: Bark
+
+
