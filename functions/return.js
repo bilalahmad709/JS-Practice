@@ -130,7 +130,23 @@ numbofB("My name is Babar Badsha");
 
 // higher order function
 
+// return and document.write  explain
+function khan(a, b){
+    let num1 = a;
+    let num2 = b;
+    c = num1 + num2;
+    return c;
+}
+
+let additionr = khan (10,20);
+document.write("<br> The addition in return is :  " + additionr);
 
 
+ function khan2(a,b){
+    let num1 = a;
+    let num2 = b;
+    c = num1 + num2;
+    document.write( " <br> The addition of two numbers is : " +  c);
+ }
 
-
+khan2(2,3);
