@@ -1,3 +1,77 @@
+const hii = ["ali", "zahid", 1];
+for(let value of hii ){
+    document.write( value , "<br>");
+}
+
+document.write("<br>")
+// js Object as a data type
+
+const user={
+    name: "Bilal Ahmad",
+    f_name : " Ismail Khan",
+    email : "bilal123@gmail.com",
+}
+
+// targetting only one value
+document.write(user.name , "<br>");
+
+// targetting all values
+for( let key in user){
+    document.write(`${key} :  ${user[key]}  <br>`)
+}
+
+document.write("<br><br>");
+
+// function inside object
+const myData = {
+    name : "Ali Raza",
+    class : "10th",
+    Age :  23,
+    Result : false,
+    hobby : function(){
+        document.write("He used to play cricket");
+    },
+}
+
+
+for (let keys in myData) {
+    if (typeof myData[keys] === "function") {
+        document.write(`${keys} : `);
+        myData[keys](); // Call the function
+        document.write("<br>");
+    } else {
+        document.write(`${keys} : ${myData[keys]} <br>`);
+    }
+}
+
+// object inside object
+document.write("<br><br> <h3>object inside object </h3>");
+const nestedObj = {
+    name : "ali",
+    age : 22,
+    email : "ali123@gmail.com",
+    subjects :[
+        "Urdu", 
+        "English",
+        " Science"],
+    marks : {
+        urdu : 78,
+        english :89,
+        science : 88,
+    },
+}
+
+for (let val in nestedObj) {
+    if (typeof nestedObj[val] === "object" ) {
+        document.write(`${val}: <br>`);
+        for (let subKey in nestedObj[val]) {
+            document.write(`${nestedObj[val][subKey]} <br>`);
+        }
+    } else {
+        document.write(`${val} : ${nestedObj[val]} <br>`);
+    }
+}
+document.write("<br><br>");
 //IMPORTANT NOTE
 
 // the class keyword is not strictly necessary to define a class in JavaScript. Before ES6 introduced the class keyword, JavaScript used functions to create objects and simulate classes. This approach is still valid and widely used in some cases.

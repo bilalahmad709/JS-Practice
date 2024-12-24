@@ -150,3 +150,72 @@ document.write("<br> The addition in return is :  " + additionr);
  }
 
 khan2(2,3);
+
+twonum=(num1,num2)=>{
+    let result = num1 +num2;
+    return result;
+}
+let addtwonum= twonum(20,40);
+document.write("<br> The addition of two numbers is : " + addtwonum);
+
+// user logged in example 
+
+userloggedIn=(username)=>{
+    return `<br><br><b>${username} </b>logged in successfully`;
+}
+document.write(userloggedIn("Bilal"));
+document.write(userloggedIn("zahid"));
+
+//rest operator
+
+restFtnAddcart=(...num)=>{
+    let total=0;
+    for(i of num){
+        total+=i;
+    }
+    return total;
+}
+document.write( "<br> The Total of the values are :  " + restFtnAddcart(20,20,30));
+
+//function with objects
+
+document.write(" <br> <h2>function with Ojects</h2>");
+
+const user = {
+    name: "shah sahib",
+    age : 23,
+    email : "shah123@gmail.com"
+}
+const user2={
+    name: "ali sahib",
+    age : 20,
+    email : "ali123@gmail.com"
+}
+handleobject=(anyobject)=>{
+    document.write(`<br> The user is <b>${anyobject.name}</b>, his age is 
+    <b>${anyobject.age}</b> and his email is ${anyobject.email}.`);
+}
+handleobject(user);
+handleobject(user2);
+
+//we can pass the object as well
+
+handleobject({
+    name: "atif sahib",
+    age : 19,
+    email : "atif123@gmail.com"
+})
+
+// functions with arrays
+const myArray = [20, 30, 40, 50, 60, 70];
+
+MyarrayFunction= (any)=>{
+    document.write(" <br>targetting the second value from the array is : " + any[1]);
+}
+MyarrayFunction(myArray);
+
+// we can pass value inside function
+document.write("<br><h3>We can pass value inside function</h3>");
+MyarrayFunction([
+    30,55,45,35
+]);
