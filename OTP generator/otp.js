@@ -9,7 +9,7 @@
 function generateotp(number){
     let otp ='';
     for(let i=0; i<number;i++){
-        otp += Math.trunc(Math.random()*10).toString()
+        otp += Math.trunc(Math.random()*10).toString();
     }
     return otp;
 }

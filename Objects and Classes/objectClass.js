@@ -17,7 +17,7 @@ document.write(user.name , "<br>");
 
 // targetting all values
 for( let key in user){
-    document.write(`${key} :  ${user[key]}  <br>`)
+    document.write(`${key} :  ${user[key]}  <br>`);
 }
 
 document.write("<br><br>");
@@ -213,5 +213,21 @@ class Dog extends Animal {
 
 let dog = new Dog();
 dog.makeSound(); // Output: Bark
+
+//inheritance 2nd example 
+class calculate{
+    constructor(num1,num2){
+        this.number1=num1;
+        this.number2=num2;
+    
+    }
+    add(){
+       let Result = this.number1 + this.number2;
+       document.write(`<br> The addition of two number is :` + Result);
+    }
+}
+
+let addCalculate= new calculate(10,20);
+document.write(addCalculate.add());
 
 
